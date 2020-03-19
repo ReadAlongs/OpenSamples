@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI>
+    <text xml:lang='dan'>
+        <body>
+            <div type='page'>
+                <p>
+                    <s>Hej.</s>
+                    <s>Jeg hedder Aidan, og jeg laver forskning og udvikling for sprogene af urbefolkeningerne fra landet vi nu hedder Canada.</s>
+                    <s>Jeg interesser mig for open source sprogteknologi, som gør det lettere at bruge sprogene på computere.</s>
+                    <s>Jeg elsker mit job, og jeg synes det er totalt fascinerende at arbejde i en videnskabelig disciplin hvor jeg kan kombinere mine intellektuelle interesser i sprog og datalogi med mine politiske interesser i Canadiske historie og afkolinsering.</s>
+                    <s>Tak.</s>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>
