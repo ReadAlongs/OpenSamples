@@ -1,0 +1,1 @@
+Ce corpus permettra d'entraîner la TA, neuronale ou statistique, ainsi que d'autres applications de traitement du langage naturel.

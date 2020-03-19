@@ -1,0 +1,1 @@
+ En parallèle, j'aide à écrire des tests pour rendre le ReadAlong-Studio plus robuste.
