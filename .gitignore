@@ -1,1 +1,4 @@
 .DS_Store
+flask_session
+test.log
+delme.*
