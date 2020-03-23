@@ -13,3 +13,9 @@ cat ej-fra-[1234].txt > ej-fra-1234.txt
 # As soon as the 4th and 5th blocks are there, alignment fails: ej-fra-45 fails to align.
 ffmpeg -i ej-fra-4.wav -i ej-fra-5.wav -filter_complex '[0:0][1:0]concat=n=2:v=0:a=1[out]' -map '[out]' ej-fra-45.wav
 cat ej-fra-[45].txt > ej-fra-45.txt
+
+# Not necessary, but saving the commands so I have them
+#ffmpeg -i ej-fra-1.wav -i ej-fra-2.wav -i ej-fra-3.wav -filter_complex '[0:0][1:0][2:0]concat=n=3:v=0:a=1[out]' -map '[out]' ej-fra-123.wav
+#cat ej-fra-[123].txt > ej-fra-123.txt
+#ffmpeg -i ej-fra-1.wav -i ej-fra-2.wav -filter_complex '[0:0][1:0]concat=n=2:v=0:a=1[out]' -map '[out]' ej-fra-12.wav
+#cat ej-fra-[12].txt > ej-fra-12.txt
