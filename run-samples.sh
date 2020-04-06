@@ -16,6 +16,8 @@ readalongs align -i -s -f -l dan dan/ap_dan.txt dan/ap_dan.wav output/ap_dan
 # UDHR Librivox files
 # eng aligns
 readalongs align -i -s -f -l eng UDHR-Librivox/human_rights_un_eng-preamble.txt UDHR-Librivox/human_rights_un_eng_ks_64kb-preamble.mp3 output/UDHR-eng-preamble
-# fra exist with a UnboundLocalError exception
+# fra produces errors because "s" gets swallowed in g2p
 readalongs align -i -s -f -l fra UDHR-Librivox/human_rights_un_frn-preamble.txt UDHR-Librivox/human_rights_un_frn_ezwa_64kb-preamble.mp3 output/UDHR-fra-preamble
+# dan doesn't align yet because of some g2p issues, e.g., with "frygt" going to "F rUW Y T", where the "r" should have been mapped out
+readalongs align -i -s -f -l dan UDHR-Librivox/human_rights_un_dns-preamble.txt UDHR-Librivox/human_rights_un_dns_me_64kb-preamble.mp3 output/UDHR-dan-preamble
 
