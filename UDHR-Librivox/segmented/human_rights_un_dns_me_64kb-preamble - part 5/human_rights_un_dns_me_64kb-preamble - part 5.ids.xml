@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI>
+    <text xml:lang="dan" id="t0">
+        <body id="t0b0">
+            <div type="page" id="t0b0d0">
+                    <p id="t0b0d0p0">
+                            <s id="t0b0d0p0s0"><w id="t0b0d0p0s0w0">da</w> <w id="t0b0d0p0s0w1">det</w> <w id="t0b0d0p0s0w2">er</w> <w id="t0b0d0p0s0w3">af</w> <w id="t0b0d0p0s0w4">afgørende</w> <w id="t0b0d0p0s0w5">betydning</w> <w id="t0b0d0p0s0w6">at</w> <w id="t0b0d0p0s0w7">fremme</w> <w id="t0b0d0p0s0w8">udviklingen</w> <w id="t0b0d0p0s0w9">af</w> <w id="t0b0d0p0s0w10">venskabelige</w> <w id="t0b0d0p0s0w11">forhold</w> <w id="t0b0d0p0s0w12">mellem</w> <w id="t0b0d0p0s0w13">nationerne</w>,</s>
+                    </p>
+            </div>
+            
+        </body>
+    </text>
+</TEI>

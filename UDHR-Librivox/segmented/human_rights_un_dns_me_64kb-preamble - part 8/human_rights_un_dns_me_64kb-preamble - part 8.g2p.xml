@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI>
+    <text xml:lang="dan" id="t0">
+        <body id="t0b0">
+            <div type="page" id="t0b0d0">
+                    <p id="t0b0d0p0">
+                            <s id="t0b0d0p0s0"><w id="t0b0d0p0s0w0">D AE</w> <w id="t0b0d0p0s0w1">EH N</w> <w id="t0b0d0p0s0w2">F AE L L EH S</w> <w id="t0b0d0p0s0w3">F Y S T OW EH L S EH</w> <w id="t0b0d0p0s0w4">AE</w> <w id="t0b0d0p0s0w5">D IY S S EH</w> <w id="t0b0d0p0s0w6">ZH EH DH IY Y HH EH DH Y</w> <w id="t0b0d0p0s0w7">AO</w> <w id="t0b0d0p0s0w8">F ZH IY HH EH DH Y</w> <w id="t0b0d0p0s0w9">Y</w> <w id="t0b0d0p0s0w10">AE</w> <w id="t0b0d0p0s0w11">D EH N</w> <w id="t0b0d0p0s0w12">S T Y S T EH</w> <w id="t0b0d0p0s0w13">B EH T UW D N IY NG</w> <w id="t0b0d0p0s0w14">F Y</w> <w id="t0b0d0p0s0w15">D EH N</w> <w id="t0b0d0p0s0w16">F UW L D EH</w> <w id="t0b0d0p0s0w17">V Y K EH L IY Y G AO ZH EH L S EH</w> <w id="t0b0d0p0s0w18">AE</w> <w id="t0b0d0p0s0w19">D EH N N EH</w> <w id="t0b0d0p0s0w20">F Y P L IY Y T EH L S EH</w>,</s>
+                    </p>
+            </div>
+            
+        </body>
+    </text>
+</TEI>

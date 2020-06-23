@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI>
+    <text xml:lang="dan" id="t0">
+        <body id="t0b0">
+            <div type="page" id="t0b0d0">
+                    <p id="t0b0d0p0">
+                            <s id="t0b0d0p0s0"><w id="t0b0d0p0s0w0">da</w> <w id="t0b0d0p0s0w1">en</w> <w id="t0b0d0p0s0w2">fælles</w> <w id="t0b0d0p0s0w3">forståelse</w> <w id="t0b0d0p0s0w4">af</w> <w id="t0b0d0p0s0w5">disse</w> <w id="t0b0d0p0s0w6">rettigheder</w> <w id="t0b0d0p0s0w7">og</w> <w id="t0b0d0p0s0w8">friheder</w> <w id="t0b0d0p0s0w9">er</w> <w id="t0b0d0p0s0w10">af</w> <w id="t0b0d0p0s0w11">den</w> <w id="t0b0d0p0s0w12">største</w> <w id="t0b0d0p0s0w13">betydning</w> <w id="t0b0d0p0s0w14">for</w> <w id="t0b0d0p0s0w15">den</w> <w id="t0b0d0p0s0w16">fulde</w> <w id="t0b0d0p0s0w17">virkeliggørelse</w> <w id="t0b0d0p0s0w18">af</w> <w id="t0b0d0p0s0w19">denne</w> <w id="t0b0d0p0s0w20">forpligtelse</w>,</s>
+                    </p>
+            </div>
+            
+        </body>
+    </text>
+</TEI>

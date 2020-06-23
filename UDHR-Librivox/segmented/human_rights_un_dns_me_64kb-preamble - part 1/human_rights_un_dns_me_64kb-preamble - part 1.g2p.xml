@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI>
+    <text xml:lang="dan" id="t0">
+        <body id="t0b0">
+            <div type="page" id="t0b0d0">
+                    <p id="t0b0d0p0">
+                            <s id="t0b0d0p0s0"><w id="t0b0d0p0s0w0">V Y D EH N S Y K L AE ZH IY NG EH N</w> <w id="t0b0d0p0s0w1">AO M</w> <w id="t0b0d0p0s0w2">M EH N N EH S K EH ZH EH DH IY Y HH EH DH Y N EH</w></s>
+                            <s id="t0b0d0p0s1"><w id="t0b0d0p0s1w0">IY N D L EH DH N IY NG</w></s>
+                    </p>
+            </div>
+            
+        </body>
+    </text>
+</TEI>

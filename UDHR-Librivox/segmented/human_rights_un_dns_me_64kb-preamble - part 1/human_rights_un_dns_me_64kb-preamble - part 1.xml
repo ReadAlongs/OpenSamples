@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI>
+    <text xml:lang="dan" id="t0">
+        <body id="t0b0">
+            <div type="page" id="t0b0d0">
+                    <p id="t0b0d0p0">
+                            <s id="t0b0d0p0s0"><w id="t0b0d0p0s0w0">VERDENSERKLÆRINGEN</w> <w id="t0b0d0p0s0w1">OM</w> <w id="t0b0d0p0s0w2">MENNESKERETTIGHEDERNE</w></s>
+                            <s id="t0b0d0p0s1"><w id="t0b0d0p0s1w0">INDLEDNING</w></s>
+                    </p>
+            </div>
+            
+        </body>
+    </text>
+</TEI>

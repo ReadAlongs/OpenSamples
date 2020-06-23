@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI>
+    <text xml:lang="dan" id="t0">
+        <body id="t0b0">
+            <div type="page" id="t0b0d0">
+                    <p id="t0b0d0p0">
+                            <s id="t0b0d0p0s0"><w id="t0b0d0p0s0w0">Da</w> <w id="t0b0d0p0s0w1">anerkendelsen</w> <w id="t0b0d0p0s0w2">af</w> <w id="t0b0d0p0s0w3">den</w> <w id="t0b0d0p0s0w4">menneskeret</w> <w id="t0b0d0p0s0w5">iboende</w> <w id="t0b0d0p0s0w6">værdighed</w> <w id="t0b0d0p0s0w7">og</w> <w id="t0b0d0p0s0w8">af</w> <w id="t0b0d0p0s0w9">de</w> <w id="t0b0d0p0s0w10">lige</w> <w id="t0b0d0p0s0w11">og</w> <w id="t0b0d0p0s0w12">ufortabelige</w> <w id="t0b0d0p0s0w13">rettigheder</w> <w id="t0b0d0p0s0w14">for</w> <w id="t0b0d0p0s0w15">alle</w> <w id="t0b0d0p0s0w16">medlemmer</w> <w id="t0b0d0p0s0w17">af</w> <w id="t0b0d0p0s0w18">den</w> <w id="t0b0d0p0s0w19">menneskelige</w> <w id="t0b0d0p0s0w20">familie</w> <w id="t0b0d0p0s0w21">er</w> <w id="t0b0d0p0s0w22">grundlaget</w> <w id="t0b0d0p0s0w23">for</w> <w id="t0b0d0p0s0w24">frihed</w>, <w id="t0b0d0p0s0w25">retfærdighed</w> <w id="t0b0d0p0s0w26">og</w> <w id="t0b0d0p0s0w27">fred</w> <w id="t0b0d0p0s0w28">i</w> <w id="t0b0d0p0s0w29">verden</w>,</s>
+                    </p>
+            </div>
+            
+        </body>
+    </text>
+</TEI>

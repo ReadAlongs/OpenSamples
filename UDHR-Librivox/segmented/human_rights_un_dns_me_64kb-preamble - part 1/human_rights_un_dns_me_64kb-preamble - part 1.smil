@@ -1,0 +1,20 @@
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0">
+    <body>
+        <par id="par-t0b0d0p0s0w0">
+            <text src="human_rights_un_dns_me_64kb-preamble - part 1.xml#t0b0d0p0s0w0"/>
+            <audio src="human_rights_un_dns_me_64kb-preamble - part 1.wav" clipBegin="0.34" clipEnd="1.6"/>
+        </par>
+        <par id="par-t0b0d0p0s0w1">
+            <text src="human_rights_un_dns_me_64kb-preamble - part 1.xml#t0b0d0p0s0w1"/>
+            <audio src="human_rights_un_dns_me_64kb-preamble - part 1.wav" clipBegin="1.6" clipEnd="1.76"/>
+        </par>
+        <par id="par-t0b0d0p0s0w2">
+            <text src="human_rights_un_dns_me_64kb-preamble - part 1.xml#t0b0d0p0s0w2"/>
+            <audio src="human_rights_un_dns_me_64kb-preamble - part 1.wav" clipBegin="1.76" clipEnd="3.0250000000000004"/>
+        </par>
+        <par id="par-t0b0d0p0s1w0">
+            <text src="human_rights_un_dns_me_64kb-preamble - part 1.xml#t0b0d0p0s1w0"/>
+            <audio src="human_rights_un_dns_me_64kb-preamble - part 1.wav" clipBegin="3.0250000000000004" clipEnd="4.390000000000001"/>
+        </par>
+    </body>
+</smil>
