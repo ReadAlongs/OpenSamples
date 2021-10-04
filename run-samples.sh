@@ -10,7 +10,7 @@ readalongs align -i -s -l fra -f fra/ej-fra-long.txt fra/ej-fra.m4a output/ej-fr
 # Removing text from the end of the .txt file: alignment succeeds, with 9s of audio aligned to the last word, we'd like a warning here ideally
 readalongs align -i -s -l fra -f fra/ej-fra-short.txt fra/ej-fra.m4a output/ej-fra-short
 
-# Aidan Pine's intro text in Danish fails to align, not sure why. It used to work.
+# Aidan Pine's intro text in Danish now aligns.
 readalongs align -i -s -f -l dan dan/ap_dan.txt dan/ap_dan.wav output/ap_dan
 
 # UDHR Librivox files
