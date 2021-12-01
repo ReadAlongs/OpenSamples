@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI>
+    <!-- To exclude any element from alignment, add the do-not-align="true" attribute to
+         it, e.g., <p do-not-align="true">...</p>, or
+         <s>Some text <foo do-not-align="true">do not align this</foo> more text</s> -->
+    <text xml:lang="eng" fallback-langs="und">
+        <body>
+            <div type="page">
+                <p>
+                    <anchor time="6s"/>
+                    <s>When you have text like this, with audio sort-of matching it, but not quite, and maybe parts of the audio spoken too fast, well, anchors can help the readalongs forced aligner, SoundSwallower, align the text and audio streams together, by reducing the problem into smaller sub-problems <anchor time="20.7s"/><anchor time="21.5s"/> that it can handle succesfully.</s>
+                    <s>You take anchors, like this, <anchor time="26.32s"/> and place them into the XML version of the text, and that creates regions that are each aligned independently, and then the results are grouped together in a single output readalong.</s>
+                </p>
+                <p>
+                   <s>But this process is painful because <anchor time="37.6s"/> at this point, you have to edit the XML file manually. So we'd really like a friendly user interface that lets users pick a time point visually in a rendering of the sound wave, similar to what Audacity displays, for example, and then pick a word in the text and say &quot;place an anchor before/after this word&quot;.</s>
+                    <anchor time="59s"/>
+                    <s>That should place an anchor element into the XML file for the aligner to use.</s>
+                </p>
+                <p>
+                    <s>As a great stretch goal, the user interface would also trigger alignment and display the results in a way that the user can easily see where alignment errors happened, add more anchors, or maybe even fix the alignment itself.</s>
+                    <s>Tools like Praat or ELAN can already be used to do some of this work, but they're hard to use, providing a very complex user interface with many irrelevant features.</s>
+                    <s>We can't expect community language teachers to use them.</s>
+                    <s>A purpose-built tool, integrated with ReadAlongs Studio and allowing human-in-the-loop alignment would be much better suited for our intended users.</s>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

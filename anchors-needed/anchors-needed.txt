@@ -1,0 +1,10 @@
+When you have text like this, with audio sort-of matching it, but not quite, and maybe parts of the audio spoken too fast, well, anchors can help the readalongs forced aligner, SoundSwallower, align the text and audio streams together, by reducing the problem into smaller sub-problems that it can handle succesfully.
+You take anchors, like this, and place them into the XML version of the text, and that creates regions that are each aligned independently, and then the results are grouped together in a single output readalong.
+
+But this process is painful because at this point, you have to edit the XML file manually. So we'd really like a friendly user interface that lets users pick a time point visually in a rendering of the sound wave, similar to what Audacity displays, for example, and then pick a word in the text and say "place an anchor before/after this word".
+That should place an anchor element into the XML file for the aligner to use.
+
+As a great stretch goal, the user interface would also trigger alignment and display the results in a way that the user can easily see where alignment errors happened, add more anchors, or maybe even fix the alignment itself.
+Tools like Praat or ELAN can already be used to do some of this work, but they're hard to use, providing a very complex user interface with many irrelevant features.
+We can't expect community language teachers to use them.
+A purpose-built tool, integrated with ReadAlongs Studio and allowing human-in-the-loop alignment would be much better suited for our intended users.
