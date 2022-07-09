@@ -1,4 +1,4 @@
-Making a read-along, from A to Ø
+Making a read-along, from A to Ö
 ================================
 
 I decided to walk through the entire process of making a full
