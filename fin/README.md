@@ -51,7 +51,7 @@ post-editing.  I chose to use
 or less familiar with it.
 
 I opened up Audacity, and set the [Project
-Rate)(https://manual.audacityteam.org/man/selection_toolbar.html) to
+Rate](https://manual.audacityteam.org/man/selection_toolbar.html) to
 22050 Hz, since anything greater is a waste for voice data, and the
 [Recording
 Channels](https://manual.audacityteam.org/man/device_toolbar.html) to
