@@ -188,7 +188,7 @@ ought to add specific rules for diphthongs, of which there are many.
 
 At this point, I have everything I need to try aligning, so I'll do
 that!  I can put the text of the poem, as shown above, into the file
-[hyvä on hiihtäjän hiihdellä.txt](hyvä on hiihtäjän hiihdellä.txt).
+[hyvä on hiihtäjän hiihdellä.txt](./hyvä on hiihtäjän hiihdellä.txt).
 ReadAlong Studio uses two blank lines to separate pages, so I added an
 extra line between each stanza.  Then I ran `readalongs align` with
 `--save-temps` to keep debugging information around just in case:
