@@ -60,7 +60,7 @@ necessary as ReadAlong Studio will accept a wide range of inputs.
 
 I then pressed "record", spoke the poem, pressed "stop", then selected
 "Export..." from the File menu to save the track as the WAV file [hyvä
-on hiihtäjän hiihdellä.wav](./hyvä on hiihtäjän hiihdellä.wav).  It
+on hiihtäjän hiihdellä.wav](./hyvä%20on%20hiihtäjän%20hiihdellä.wav).  It
 took a few tries to get  it all in one take, and it's far from perfect,
 but it ought to align without any problems.
 
@@ -188,7 +188,7 @@ ought to add specific rules for diphthongs, of which there are many.
 
 At this point, I have everything I need to try aligning, so I'll do
 that!  I can put the text of the poem, as shown above, into the file
-[hyvä on hiihtäjän hiihdellä.txt](./hyvä on hiihtäjän hiihdellä.txt).
+[hyvä on hiihtäjän hiihdellä.txt](./hyvä%20on%20hiihtäjän%20hiihdellä.txt).
 ReadAlong Studio uses two blank lines to separate pages, so I added an
 extra line between each stanza.  Then I ran `readalongs align` with
 `--save-temps` to keep debugging information around just in case:
