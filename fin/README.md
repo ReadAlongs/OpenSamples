@@ -1,10 +1,29 @@
 Making a read-along, from A to Ö
 ================================
 
+(or, if you will, "from start to Finnish")
+
 I decided to walk through the entire process of making a full
 read-along, with text, audio, and images, as a language learner for an
 as-yet unsupported language with a very straightforward writing
 system.
+
+Preliminary setup
+-----------------
+
+I checked out and installed `g2p` and ReadAlong Studio in a Python 3 virtual environment:
+
+```
+python3 -m venv ve
+. ve/bin/activate
+git clone git@github.com:roedoejet/g2p.git
+(cd g2p && pip install -e .)
+git clone git@github.com:ReadAlongs/Studio.git
+(cd Studio && pip install -e .)
+```
+
+Creating a phonetic mapping
+---------------------------
 
 I will make a read-along of the poem "Hyvä on hiihtäjän hiihdellä" by
 Eino Leino. which can be found online at
@@ -42,38 +61,20 @@ This is, of course, in Finnish, which I have been learning very
 slowly, and do not speak well, but hopefully well enough to make a
 read-along!
 
-The first step, clearly, is to record myself speaking the text.  We
-don't have an interface to do this in the ReadAlong Studio web
-application, but in some sense this is okay, because I know I won't
-get it right on the first try, so it may be useful to do some
-post-editing.  I chose to use
-[Audacity](https://www.audacityteam.org/) since it's free and I'm more
-or less familiar with it.
-
-I opened up Audacity, and set the [Project
-Rate](https://manual.audacityteam.org/man/selection_toolbar.html) to
-22050 Hz, since anything greater is a waste for voice data, and the
-[Recording
-Channels](https://manual.audacityteam.org/man/device_toolbar.html) to
-1 (mono).  But don't worry too much about this, it isn't strictly
-necessary as ReadAlong Studio will accept a wide range of inputs.
-
-I then pressed "record", spoke the poem, pressed "stop", then selected
-"Export..." from the File menu to save the track as the WAV file [hyvä
-on hiihtäjän hiihdellä.wav](./hyvä%20on%20hiihtäjän%20hiihdellä.wav).  It
-took a few tries to get  it all in one take, and it's far from perfect,
-but it ought to align without any problems.
-
-Next, we have to add the writing system, which, as mentioned earlier,
-is really simple.  There are only a few minor complexities in mapping
-literary Finnish to IPA (the International Phonetic Alphabet), and we
-will simply ignore most of them for the purposes of alignment - my
-pronunciation is far from correct in any case!  I followed the
-instructions on [Aidan's
+In order to align this to some speech, we have to add the writing
+system to the [G2P](https://github.com/roedoejet/g2p) library.  As
+mentioned earlier, the writing system is pretty simple (and, in fact,
+we don't strictly *need* to add it, as I'll describe later).  There
+are only a few minor complexities in mapping literary Finnish to IPA
+(the International Phonetic Alphabet), and we will simply ignore most
+of them for the purposes of alignment - my pronunciation is far from
+correct in any case!  I followed the instructions on [Aidan's
 blog](https://blog.mothertongues.org/g2p-basic-mappings-gui/) to write
-them in G2P studio.  Unfortunately, while I would have liked to paste
-the entire poem into the text area for testing, it only accepts a few
-lines at a time.
+them in [G2P Studio](https://g2p-studio.herokuapp.com/).
+
+This is convenient since I can simply paste a few lines of the poem at
+a time into the G2P Studio app to verify that the conversion looks
+correct.
 
 In order to enter the IPA characters for the rules, you can use
 [typeit.org](https://ipa.typeit.org/full/).  One thing you have to
@@ -83,7 +84,8 @@ sure that you either use the IPA keyboard or copy from a known good
 IPA text.
 
 Even worse, the "g" in ASCII is not the same as the /ɡ/ in IPA.  Copy
-that one from this document if you are confused.
+the one from the previous sentence (between the '/' characters) if you
+are confused.
 
 Although it's not strictly necessary to add rules for letters which
 are the same in Finnish as in IPA (basically all the consonants), it's
@@ -156,11 +158,9 @@ Writing English IPA mapping for fin-ipa to file
 WARNING - Adding mapping config to file at /home/dhd/work/g2p/g2p/mappings/langs/generated/config.yaml
 ```
 
-Note that the documentation on the MotherTongues blog seems to be out
-of date, as the somewhat cryptic "&shared" and "*shared" are required
-in `config.yaml` for this to work.  Also, as noted above, the IPA
-characters *must* be valid IPA, /ɡ/ in particular, or the mappings
-will not be created.
+Note that IPA characters *must* be valid IPA, /ɡ/ in particular, or
+the mappings will not be created.  `g2p doctor` can warn you about
+such problems.
 
 I then checked to make sure the changes are there by running `g2p
 convert` for both the basic mapping and the `eng-arpabet` one I'll
@@ -185,6 +185,33 @@ EH IY  HH EY HH D AE
 
 Well, it's not at all correct, but it should align anyway.  Really I
 ought to add specific rules for diphthongs, of which there are many.
+
+Aligning text and audio
+-----------------------
+
+Now, I will need to record myself speaking the text.  We don't have an
+interface to do this in the ReadAlong Studio web application, but in
+some sense this is okay, because I know I won't get it right on the
+first try, so it may be useful to do some post-editing.  I chose to
+use [Audacity](https://www.audacityteam.org/) since it's free and I'm
+more or less familiar with it.
+
+I opened up Audacity, and set the [Project
+Rate](https://manual.audacityteam.org/man/selection_toolbar.html) to
+22050 Hz, since anything greater is a waste for voice data, and the
+[Recording
+Channels](https://manual.audacityteam.org/man/device_toolbar.html) to
+1 (mono).  But don't worry too much about this, it isn't strictly
+necessary as ReadAlong Studio will accept a wide range of inputs.
+
+I then pressed "record", spoke the poem, pressed "stop", then selected
+"Export..." from the File menu to save the track as the WAV file [hyvä
+on hiihtäjän hiihdellä.wav](./hyvä%20on%20hiihtäjän%20hiihdellä.wav).  It
+took a few tries to get  it all in one take, and it's far from perfect,
+but it ought to align without any problems.
+
+Aligning using `readalongs align`
+-----------------------------------
 
 At this point, I have everything I need to try aligning, so I'll do
 that!  I can put the text of the poem, as shown above, into the file
@@ -236,3 +263,16 @@ phonetic mappings will help.  I added some code to readalongs/align.py
 to put the header and subheader in the HTML from the `config.json`, so
 this might not work yet for you.
 
+Shortcut: Without G2P
+---------------------
+
+As mentioned earlier, it isn't actually necessary to create a phonetic
+mapping in many cases, though I did so in order to demonstrate (and
+test) the process.  To do this, just use `und` as the language name
+when running `readalongs align`, like this:
+
+```
+readalongs align -f -c config.json -o html -l und hyvä\ on\ hiihtäjän\ hiihdellä.txt hyvä\ on\ hiihtäjän\ hiihdellä.wav output
+```
+
+In this case, it works very well, in fact.
