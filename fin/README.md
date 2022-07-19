@@ -294,8 +294,8 @@ French at some point:
 
 ```
     Pour le skieur, c'est beau le ski
-    quand sous le patin scintille la neige
-    quand sur le ciel s'ouvre le grand jour, -
+    quand sous le talon scintille le fond
+    quand sur l'horizon s'ouvre le grand jour, -
     mais plus beau c'est, quand craque le bois
     quand hurle le vent, quand se perd la trace
     dans la grosse poudrerie tout autour.
@@ -312,11 +312,11 @@ French at some point:
     quand le poêle du refuge est chauffé, -
     mais c'est plus brillant, plus vaillant de skier
     jusqu'au bout par mille joyeux détours
-    et ne savoir par quel bord tourner.
+    et ne savoir de quel bord tourner.
 
     Et c'est tout à fait bon de skier
-    le cœur gai et léger dans la nuit
-    éclairée par la flamme de l'espoir, -
+    le cœur gai et léger dans l'obscurité
+    éclairée par les flammes de l'espoir, -
     mais ça va tout autant de skier à fond
     le front en sueur, dans la tristesse profonde
     et jusqu'à la porte de la mort.
