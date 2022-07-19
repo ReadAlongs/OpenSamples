@@ -98,10 +98,12 @@ let's start at the beginning with the letter `a`.  As mentioned
 earlier, IPA has a "long" symbol, so we want to map the long vowel
 `aa` to `ɑː` and the short vowel `a` to `ɑ`.  Let's enter those into
 the "Custom Rules" table:
+
 ![rules for a and aa](./aa.png)
 
 Already you can see that some of the letters have been converted in
 the output:
+
 ![applying rules](./aa_output.png)
 
 Nearly all of the rules invole simply mapping long vowels to the IPA
