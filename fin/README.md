@@ -97,10 +97,12 @@ table form on
 let's start at the beginning with the letter `a`.  As mentioned
 earlier, IPA has a "long" symbol, so we want to map the long vowel
 `aa` to `ɑː` and the short vowel `a` to `ɑ`.  Let's enter those into
-the "Custom Rules" table: ![rules for a and aa](./aa.png)
+the "Custom Rules" table:
+![rules for a and aa](./aa.png)
 
 Already you can see that some of the letters have been converted in
-the output: ![applying rules](./aa_output.png)
+the output:
+![applying rules](./aa_output.png)
 
 Nearly all of the rules invole simply mapping long vowels to the IPA
 representation with the length marker.  We will also add a couple
@@ -365,13 +367,16 @@ the `do-not-align` segment, e.g.:
 </div>
 ```
 
-Now all we have to do is re-run the alignment using the XML file
-instead of the text file as input:
+You can see the resulting file here: [hyvä on hiihtäjän
+hiihdellä.xml](./hyvä%20on%20hiihtäjän%20hiihdellä.xml).  Now all I
+have to do is re-run the alignment using this XML file instead of the
+text file as input:
 
 ```
 readalongs align -f -c config.json -o html -l fin \
     hyvä\ on\ hiihtäjän\ hiihdellä.xml hyvä\ on\ hiihtäjän\ hiihdellä.wav output
 ```
 
-And voilà! The translations are there: ![component with
-translations](./translations.png)
+And voilà! The translations are there:
+
+![component with translations](./translations.png)
