@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI>
+    <!-- To exclude any element from alignment, add the do-not-align="true" attribute to
+         it, e.g., <p do-not-align="true">...</p>, or
+         <s>Some text <foo do-not-align="true">do not align this</foo> more text</s> -->
+    <text xml:lang="fin" fallback-langs="und">
+        <body>
+            <div type="page">
+                <p>
+                    <s>Hyvä on hiihtäjän hiihdellä,</s>
+                    <s>kun hanki on hohtava alla,</s>
+                    <s>kun taivas kirkasna kaareutuu -</s>
+                    <s>mut hauskempi hiihtää, kun ruskavi puu,</s>
+                    <s>tuul' ulvovi, polku on ummessa</s>
+                    <s>ja tuisku on taivahalla.</s>
+                </p>
+                <p do-not-align="true">
+                  <s class="translation">Pour le skieur, c'est beau le ski</s>
+                  <s class="translation">quand sous le patin scintille la neige</s>
+                  <s class="translation">quand sur le ciel s'ouvre le grand jour, -</s>
+                  <s class="translation">mais plus beau c'est, quand craque le bois</s>
+                  <s class="translation">quand hurle le vent, quand se perd la trace</s>
+                  <s class="translation">dans la grosse poudrerie tout autour.</s>
+                </p>
+            </div>
+            <div type="page">
+                <p>
+                    <s>Hyvä on hiihtäjän hiihdellä,</s>
+                    <s>kun ystävä häll' on myötä,</s>
+                    <s>kun latu on aukaistu edessään -</s>
+                    <s>mut parempi hiihdellä yksinään,</s>
+                    <s>tiens' itse aukaista itselleen</s>
+                    <s>ja yksin uhmata yötä.</s>
+                </p>
+                <p do-not-align="true">
+                  <s class="translation">Pour le skieur, c'est bon de skier</s>
+                  <s class="translation">quand l'ami est à ses côtés</s>
+                  <s class="translation">quand le sentier est ouvert devant lui, -</s>
+                  <s class="translation">mais mieux c'est de skier solitaire,</s>
+                  <s class="translation">de taper ses propres sillons</s>
+                  <s class="translation">et faire face tout seul à la nuit.</s>
+                </p>
+            </div>
+            <div type="page">
+                <p>
+                    <s>Hyvä on hiihtäjän hiihdellä,</s>
+                    <s>kun tietty on matkan määrä,</s>
+                    <s>kun liesi viittovi lämpöinen, -</s>
+                    <s>mut sorjempi, uljaampi hiihtää sen,</s>
+                    <s>joka outoja onnen vaiheita käy</s>
+                    <s>eikä tiedä, miss' oikea, väärä.</s>
+                </p>
+                <p do-not-align="true">
+                  <s class="translation">Pour le skieur, c'est génial de skier</s>
+                  <s class="translation">quand le parcours est bien balisé</s>
+                  <s class="translation">quand le poêle du refuge est chauffé, -</s>
+                  <s class="translation">mais c'est plus brillant, plus vaillant de skier</s>
+                  <s class="translation">jusqu'au bout par mille joyeux détours</s>
+                  <s class="translation">et ne savoir par quel bord tourner.</s>
+                </p>
+            </div>
+            <div type="page">
+                <p>
+                    <s>Ja hyvä on hiihtäjän hiihdellä,</s>
+                    <s>kun riemu on rinnassansa,</s>
+                    <s>kun toivo säihkyvi soihtuna yöss' -</s>
+                    <s>mut käypä se laatuun hiihtää myös</s>
+                    <s>hiki otsalla, suurissa suruissa</s>
+                    <s>ja kuolema kupeellansa.</s>
+                </p>
+                <p do-not-align="true">
+                  <s class="translation">Et c'est tout à fait bon de skier</s>
+                  <s class="translation">le cœur gai et léger dans la nuit</s>
+                  <s class="translation">éclairée par la flamme de l'espoir, -</s>
+                  <s class="translation">mais ça va tout autant de skier à fond</s>
+                  <s class="translation">le front en sueur, dans la tristesse profonde</s>
+                  <s class="translation">et jusqu'à la porte de la mort.</s>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

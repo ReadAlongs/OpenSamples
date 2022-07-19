@@ -11,7 +11,9 @@ system.
 Preliminary setup
 -----------------
 
-I checked out and installed `g2p` and ReadAlong Studio in a Python 3 virtual environment:
+First, I checked out and installed `g2p` and ReadAlong Studio in a
+Python 3 virtual environment. I installed them "editable" (the `-e`
+flag to `pip`) since I am going to add a new language to `g2p`:
 
 ```
 python3 -m venv ve
@@ -25,8 +27,8 @@ git clone git@github.com:ReadAlongs/Studio.git
 Creating a phonetic mapping
 ---------------------------
 
-I will make a read-along of the poem "Hyvä on hiihtäjän hiihdellä" by
-Eino Leino. which can be found online at
+I am going to make a read-along of the poem "Hyvä on hiihtäjän
+hiihdellä" by Eino Leino. which can be found online at
 [WikiSource](https://fi.wikisource.org/wiki/Hyv%C3%A4_on_hiiht%C3%A4j%C3%A4n_hiihdell%C3%A4):
 
     Hyvä on hiihtäjän hiihdellä,
@@ -221,7 +223,8 @@ extra line between each stanza.  Then I ran `readalongs align` with
 `--save-temps` to keep debugging information around just in case:
 
 ```
-$ readalongs align --save-temps -o html -l fin hyvä\ on\ hiihtäjän\ hiihdellä.txt hyvä\ on\ hiihtäjän\ hiihdellä.wav output
+$ readalongs align --save-temps -o html -l fin \
+    hyvä\ on\ hiihtäjän\ hiihdellä.txt hyvä\ on\ hiihtäjän\ hiihdellä.wav output
 INFO - Words (<w>) not present; tokenizing
 INFO - Align mode strict succeeded for sequence 0.
 INFO - Number of words found: 109
@@ -255,7 +258,8 @@ I resized my photos to 300 pixels wide to fit better in the readalong
 web component.  Now I rerun alignment:
 
 ```
-readalongs align -f -c config.json -o html -l fin hyvä\ on\ hiihtäjän\ hiihdellä.txt hyvä\ on\ hiihtäjän\ hiihdellä.wav output
+readalongs align -f -c config.json -o html -l fin \
+    hyvä\ on\ hiihtäjän\ hiihdellä.txt hyvä\ on\ hiihtäjän\ hiihdellä.wav output
 ```
 
 Looks nice!  The alignment isn't great, and probably improving the
@@ -272,7 +276,102 @@ test) the process.  To do this, just use `und` as the language name
 when running `readalongs align`, like this:
 
 ```
-readalongs align -f -c config.json -o html -l und hyvä\ on\ hiihtäjän\ hiihdellä.txt hyvä\ on\ hiihtäjän\ hiihdellä.wav output
+readalongs align -f -c config.json -o html -l und \
+    hyvä\ on\ hiihtäjän\ hiihdellä.txt hyvä\ on\ hiihtäjän\ hiihdellä.wav output
 ```
 
 In this case, it works very well, in fact.
+
+Adding translations
+-------------------
+
+As it turns out, I seem to have accidentally translated this poem into
+French at some point:
+
+```
+    Pour le skieur, c'est beau le ski
+    quand sous le patin scintille la neige
+    quand sur le ciel s'ouvre le grand jour, -
+    mais plus beau c'est, quand craque le bois
+    quand hurle le vent, quand se perd la trace
+    dans la grosse poudrerie tout autour.
+
+    Pour le skieur, c'est bon de skier
+    quand l'ami est à ses côtés
+    quand le sentier est ouvert devant lui, -
+    mais mieux c'est de skier solitaire,
+    de taper ses propres sillons
+    et faire face tout seul à la nuit.
+
+    Pour le skieur, c'est génial de skier
+    quand le parcours est bien balisé
+    quand le poêle du refuge est chauffé, -
+    mais c'est plus brillant, plus vaillant de skier
+    jusqu'au bout par mille joyeux détours
+    et ne savoir par quel bord tourner.
+
+    Et c'est tout à fait bon de skier
+    le cœur gai et léger dans la nuit
+    éclairée par la flamme de l'espoir, -
+    mais ça va tout autant de skier à fond
+    le front en sueur, dans la tristesse profonde
+    et jusqu'à la porte de la mort.
+```
+
+While of dubious literary (and grammatical) interest, this will be
+useful to demonstrate a frequently-used feature of read-alongs.  To do
+this, I will need to convert the text into the ReadAlong XML format,
+which I can do with `readalongs make-xml`:
+
+```
+$ readalongs make-xml -l fin hyvä\ on\ hiihtäjän\ hiihdellä.txt 
+INFO - Wrote hyvä on hiihtäjän hiihdellä.xml
+```
+
+As you can see, it wrote an XML file with the text split into lines
+and pages as I expected:
+
+```xml
+<div type="page">
+    <p>
+        <s>Hyvä on hiihtäjän hiihdellä,</s>
+        <s>kun hanki on hohtava alla,</s>
+<!- ... etc ... ->
+    </p>
+</div>
+<div type="page">
+    <p>
+        <s>Hyvä on hiihtäjän hiihdellä,</s>
+```
+
+It also contains a helpful comment about the `do-not-align="true"`
+attribute, which is exactly what I'll do to add translations.
+Basically for each stanza, I'll add the translation on the same page
+(i.e. `<div type="page">` element) in the same format, but with that
+attribute set on the enclosing `<p>` tag.  In addition, in order to
+activate the "hide translations" feature of the web component, we need
+to add the `class="translation"` attribute *to each* `<s>` tag inside
+the `do-not-align` segment, e.g.:
+
+```xml
+<div type="page">
+    <p>
+        <s>Hyvä on hiihtäjän hiihdellä,</s>
+<!- ... etc ... ->
+    </p>
+    <p do-not-align="true">
+        <s class="translation">Pour le skieur, c'est beau le ski</s>
+<!- ... etc ... ->
+</div>
+```
+
+Now all we have to do is re-run the alignment using the XML file
+instead of the text file as input:
+
+```
+readalongs align -f -c config.json -o html -l fin \
+    hyvä\ on\ hiihtäjän\ hiihdellä.xml hyvä\ on\ hiihtäjän\ hiihdellä.wav output
+```
+
+And voilà! The translations are there: ![component with
+translations](./translations.png)
