@@ -248,7 +248,7 @@ fin|eng-arpabet|hiihtää|HH IY HH T AE
 Aligning text and audio
 -----------------------
 
-Now, I will need to record myself speaking the text.  We wlil have an
+Now, I will need to record myself speaking the text.  We have an
 interface to do this in the ReadAlong Studio web application, but
 because I know I won't get it right on the first try, so it may be
 useful to do some post-editing.  I chose to use
