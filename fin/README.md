@@ -248,12 +248,12 @@ fin|eng-arpabet|hiihtää|HH IY HH T AE
 Aligning text and audio
 -----------------------
 
-Now, I will need to record myself speaking the text.  We don't have an
-interface to do this in the ReadAlong Studio web application, but in
-some sense this is okay, because I know I won't get it right on the
-first try, so it may be useful to do some post-editing.  I chose to
-use [Audacity](https://www.audacityteam.org/) since it's free and I'm
-more or less familiar with it.
+Now, I will need to record myself speaking the text.  We wlil have an
+interface to do this in the ReadAlong Studio web application, but
+because I know I won't get it right on the first try, so it may be
+useful to do some post-editing.  I chose to use
+[Audacity](https://www.audacityteam.org/) since it's free and I'm more
+or less familiar with it.
 
 I opened up Audacity, and set the [Project
 Rate](https://manual.audacityteam.org/man/selection_toolbar.html) to
