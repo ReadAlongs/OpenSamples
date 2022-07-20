@@ -169,8 +169,8 @@ the mappings will not be created.  `g2p doctor` can warn you about
 such problems.
 
 I then checked to make sure the changes are there by running `g2p
-convert` for both the basic mapping and the `eng-arpabet` one I'll
-ultimately use in g2p studio:
+convert` for both the basic mapping and the `eng-arpabet` one that is
+ultimately used by ReadAlong Studio:
 
 ```
 $ g2p convert "hiihtää" fin fin-ipa
