@@ -234,6 +234,16 @@ mapping you are editing to tell future linguists and developers that
 it has been modified manually.  You can see how I did this here:
 https://github.com/roedoejet/g2p/blob/master/g2p/mappings/langs/generated/config.yaml#L419
 
+You should, of course, also add *test cases* to ensure that the output
+is correct.  You can always run `python g2p/tests/test_langs.py` to
+test just the mappings.  In this case, the test cases I created are in
+[`g2p/tests/public/data/fin.psv`](https://github.com/roedoejet/g2p/blob/master/g2p/tests/public/data/fin.psv)
+and you can see that I added this line to test the case above:
+
+```
+fin|eng-arpabet|hiihtää|HH IY HH T AE
+```
+
 
 Aligning text and audio
 -----------------------
