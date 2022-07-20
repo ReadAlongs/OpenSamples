@@ -189,8 +189,51 @@ $ g2p convert "ei hiihdä" fin eng-arpabet
 EH IY  HH EY HH D AE 
 ```
 
-Well, it's not at all correct, but it should align anyway.  Really I
-ought to add specific rules for diphthongs, of which there are many.
+Well, it's not at all correct, but it should align anyway.  To see
+where the automatic mapping went wrong, I can look in
+`g2p/mappings/langs/generated/fin-ipa_to_eng-ipa.json`.  Here I see
+these lines in particular, responsible for the incorrect mappings of "ii"
+and "ää" into "EY":
+
+```
+    {"in": "iː", "out": "eː"},
+    {"in": "æː", "out": "eː"},
+```
+
+It's possible to fix this automatic mapping by simply editing this
+file and re-running `g2p update`.  In this case, I want to change it
+so that "ii" gets mapped to "IY" and "ää" gets mapped into "AE" in
+ArpaBet.  In order to do this, I need to ensure that "iː" and "æː" in
+the lines above get mapped to the appropriate phones in *English IPA*.
+
+I looked at the input phones in
+[`g2p/mappings/langs/eng/eng_ipa_to_arpabet.json`](https://github.com/roedoejet/g2p/blob/master/g2p/mappings/langs/eng/eng_ipa_to_arpabet.json#L92)
+to find IPA strings which map to the output symbols that I want, which
+in this case are just plain old "i" and "æ".  This is okay, since
+vowel length is not distinctive in English - and presumably the reason
+the bad mapping happened is that the underlying algorithm doesn't know
+this and decided that a long vowel, even the wrong one, was a better
+match.  So I changed those lines to:
+
+```
+    {"in": "iː", "out": "i"},
+    {"in": "æː", "out": "æ"},
+```
+
+And reran `g2p update`.  Voilà:
+
+```
+$ g2p convert "hiihtää" fin eng-arpabet
+INFO - Server initialized for eventlet.
+HH IY HH T AE
+```
+
+When doing this, it is a good practice to also add a line to the
+`authors` array in `g2p/mappings/langs/generated/config.yaml` for the
+mapping you are editing to tell future linguists and developers that
+it has been modified manually.  You can see how I did this here:
+https://github.com/roedoejet/g2p/blob/master/g2p/mappings/langs/generated/config.yaml#L419
+
 
 Aligning text and audio
 -----------------------
