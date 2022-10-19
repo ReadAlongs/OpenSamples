@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI>
+    <text xml:lang="iku" fallback-langs="und">
+        <body>
+            <div type="page">
+                <p>
+                    <s>ᑐᙵᓱᒋᑦ.</s>
+                    <s>ᑐᙵᓱᑉᐳᖓ.</s>
+                    <s>ᐃᓄᒃᑎᑑᓲᖑᕕᑦ?</s>
+                    <s>ᐄ, ᒥᑭᔪᒥᒃ.</s>
+                    <s>ᕇᑕᐅᔪᖓ. ᑭᓇᐅᕕᑦ?</s>
+                    <s>ᑕᐃᕕᑎᐅᔪᖓ.</s>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>
