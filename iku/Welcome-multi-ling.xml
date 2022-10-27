@@ -5,23 +5,23 @@
             <div type="page">
                 <p>
                     <s>ᑐᙵᓱᒋᑦ.</s>
-                    <s do-not-align="true">Tunngasugit.</s>
-                    <s do-not-align="true">Welcome.</s>
+                    <s class="sentence__translation" do-not-align="true">Tunngasugit.</s>
+                    <s class="sentence__translation" do-not-align="true">Welcome.</s>
                     <s>ᑐᙵᓱᑉᐳᖓ.</s>
-                    <s do-not-align="true">Tunngasuppunga.</s>
-                    <s do-not-align="true">Response to 'Tunngasugit', literally &quot;I feel welcome.&quot;</s>
+                    <s class="sentence__translation" do-not-align="true">Tunngasuppunga.</s>
+                    <s class="sentence__translation" do-not-align="true">Response to 'Tunngasugit', literally &quot;I feel welcome.&quot;</s>
                     <s>ᐃᓄᒃᑎᑑᓲᖑᕕᑦ?</s>
-                    <s do-not-align="true">Inuktituusuunguvit?</s>
-                    <s do-not-align="true">Do you speak Inuktitut?</s>
+                    <s class="sentence__translation" do-not-align="true">Inuktituusuunguvit?</s>
+                    <s class="sentence__translation" do-not-align="true">Do you speak Inuktitut?</s>
                     <s>ᐄ, ᒥᑭᔪᒥᒃ.</s>
-                    <s do-not-align="true">ii, mikijumik.</s>
-                    <s do-not-align="true">Yes, a little bit.</s>
+                    <s class="sentence__translation" do-not-align="true">ii, mikijumik.</s>
+                    <s class="sentence__translation" do-not-align="true">Yes, a little bit.</s>
                     <s>ᕇᑕᐅᔪᖓ. ᑭᓇᐅᕕᑦ?</s>
-                    <s do-not-align="true">Riitaujunga. Kinauvit?</s>
-                    <s do-not-align="true">I'm Riita. What's your name?</s>
+                    <s class="sentence__translation" do-not-align="true">Riitaujunga. Kinauvit?</s>
+                    <s class="sentence__translation" do-not-align="true">I'm Riita. What's your name?</s>
                     <s>ᑕᐃᕕᑎᐅᔪᖓ.</s>
-                    <s do-not-align="true">Taivitiujunga.</s>
-                    <s do-not-align="true">My name is Taiviti.</s>
+                    <s class="sentence__translation" do-not-align="true">Taivitiujunga.</s>
+                    <s class="sentence__translation" do-not-align="true">My name is Taiviti.</s>
                 </p>
             </div>
         </body>
